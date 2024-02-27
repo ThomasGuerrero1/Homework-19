@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background-color: #000000;
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  background-color: #000000;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: #000000;
+  padding: 100px 15px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #1d1d1d;
+  text-align: center;
+  color: white;
+}
+button {
+  padding: 15px;
+  background-color: #94231e;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+footer {
+  background-color: #000000;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+/* My UX Skills Section */
+.flexcontainer{
+  display: flex;
+  background-color: black;
+}
+.h1{
+  background-color: black;
+  color: white;
+  font-size: 50px;
+}
+.flexcontainer div {
+  background-color: #94231e;
+  width: 10%;
+  margin: 10px;
+  padding: 20px;
+  font-size: 26px;
+  text-align: center;
+  margin: auto;
+}
+
+/* My Work Section */
+.workGrid {
+  display: grid;
+}
+.declaration{
+  font-size: 50px;
+}
+.workGrid div {
+  text-align: center;
+  padding: 20px;
+}
+.workGrid img {
+  width: 500px;
+}
+.placemat {
+  background-color: #1d1d1d;
+  padding: 50px;
+  width: 600px;
+  margin:auto;
+}
+h3{
+  text-align: center;
+}
+.connect {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "topRow topRow topRow topRow"
+  "leftSidebar leftSidebar leftSidebar rightContent";
+  background-color: #1d1d1d;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+  justify-content: center;
+}
+.topRow {
+  grid-area: topRow;
+}
+.leftSidebar {
+  grid-area: leftSidebar;
+}
+.rightContent {
+  grid-area: rightContent;
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+  .flexcontainer {flex-direction: column};
+}
+.flexContainer > div {
+  width: 100%;
+}
+.workGrid > div {
+  grid-template-columns: 1fr;
+}
