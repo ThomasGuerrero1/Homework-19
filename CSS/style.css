@@ -4,6 +4,9 @@ body {
   color: white;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 header {
   background-color: #000000;
   padding: 15px;
@@ -35,7 +38,7 @@ button {
   padding: 15px;
   background-color: #94231e;
   color: white;
-  font-size: 15px;
+  font-size: 24px;
   border-radius: 4px;
 }
 footer {
@@ -50,6 +53,18 @@ footer ul {
 footer li {
   display: inline-block;
   padding: 0px 7px;
+}
+
+/* Bouncy Arrow */
+.arrow {
+  color: white;
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 /* My UX Skills Section */
@@ -119,6 +134,7 @@ h3{
 .rightContent {
   grid-area: rightContent;
 }
+
 
 /* Mobile Media Query */
 @media only screen and (max-width: 600px) {
